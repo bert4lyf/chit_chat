@@ -4,6 +4,7 @@ import "./globals.css"
 import { Providers } from "@/components/providers"
 import { Analytics } from "@vercel/analytics/next"
 import RegisterSW from "@/components/register-sw"
+import ThemeToggle from "@/components/theme-toggle"
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -35,6 +36,8 @@ export default function RootLayout({
         {/* Register PWA service worker for offline / installable behavior */}
         {/* Client-side: RegisterSW uses a client-side effect to register /sw.js */}
         <RegisterSW />
+        {/* Theme toggle (persisted to localStorage) */}
+        <ThemeToggle />
       </body>
     </html>
   )

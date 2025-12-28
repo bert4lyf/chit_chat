@@ -62,20 +62,20 @@ function Lobby() {
           </div>
         )}
 
-        <div className="text-center space-y-2">
-          <h1 className="text-2xl font-bold tracking-tight text-green-500">
+        <div className="text-center space-y-3">
+          <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-emerald-400 drop-shadow-[0_2px_8px_rgba(16,185,129,0.12)]">
             {">"}chit *_* chat
           </h1>
-          <p className="text-zinc-500 text-sm">Let's Chat and self destruct any Trace😈</p>
+          <p className="text-zinc-300 text-base">Let's Chat and self destruct any Trace 😈</p>
         </div>
 
-        <div className="border border-zinc-800 bg-zinc-900/50 p-6 backdrop-blur-md">
-          <div className="space-y-5">
+        <div className="border border-zinc-700 bg-linear-to-b from-zinc-900/70 to-zinc-800/60 p-8 backdrop-blur-md rounded-xl shadow-lg">
+          <div className="space-y-6">
             <div className="space-y-2">
-              <label className="flex items-center text-zinc-500">Your Identity</label>
+              <label className="flex items-center text-zinc-300 font-semibold">Your Identity</label>
 
               <div className="flex items-center gap-3">
-                <div className="flex-1 bg-zinc-950 border border-zinc-800 p-3 text-sm text-zinc-400 font-mono">
+                <div className="flex-1 bg-zinc-800 border border-zinc-700 p-3 text-sm text-zinc-100 font-mono rounded-md">
                   {username}
                 </div>
               </div>
@@ -83,10 +83,12 @@ function Lobby() {
 
             <button
               onClick={() => createRoom()}
-              className="w-full bg-zinc-100 text-black p-3 text-sm font-bold hover:bg-zinc-50 hover:text-black transition-colors mt-2 cursor-pointer disabled:opacity-50"
+              className="w-full bg-emerald-500 text-white py-3 text-base font-bold hover:bg-emerald-600 transition-colors mt-4 rounded-lg shadow-md uppercase tracking-wide disabled:opacity-50"
             >
-              CREATE SECURED ROOM
+              Create secured room
             </button>
+
+            <p className="text-xs text-zinc-400 text-center mt-1">Tap to create a room — share the link with friends and start chatting privately.</p>
           </div>
         </div>
       </div>
