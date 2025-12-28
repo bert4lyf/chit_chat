@@ -3,7 +3,7 @@
   "configVersion": 0,
   "workspaces": {
     "": {
-      "name": "realtime_chat",
+      "name": "chit_chat",
       "dependencies": {
         "@elysiajs/eden": "^1.4.6",
         "@tanstack/react-query": "^5.90.12",

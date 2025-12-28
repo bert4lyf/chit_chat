@@ -64,9 +64,9 @@ function Lobby() {
 
         <div className="text-center space-y-2">
           <h1 className="text-2xl font-bold tracking-tight text-green-500">
-            {">"}private_chat
+            {">"}chit *_* chat
           </h1>
-          <p className="text-zinc-500 text-sm">A private, self-destructing chat room.</p>
+          <p className="text-zinc-500 text-sm">Let's Chat and self destruct any Trace😈</p>
         </div>
 
         <div className="border border-zinc-800 bg-zinc-900/50 p-6 backdrop-blur-md">
@@ -85,7 +85,7 @@ function Lobby() {
               onClick={() => createRoom()}
               className="w-full bg-zinc-100 text-black p-3 text-sm font-bold hover:bg-zinc-50 hover:text-black transition-colors mt-2 cursor-pointer disabled:opacity-50"
             >
-              CREATE SECURE ROOM
+              CREATE SECURED ROOM
             </button>
           </div>
         </div>

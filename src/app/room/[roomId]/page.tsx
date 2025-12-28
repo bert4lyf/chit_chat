@@ -140,7 +140,7 @@ const Page = () => {
           onClick={() => destroyRoom()}
           className="text-xs bg-zinc-800 hover:bg-red-600 px-3 py-1.5 rounded text-zinc-400 hover:text-white font-bold transition-all group flex items-center gap-2 disabled:opacity-50"
         >
-          <span className="group-hover:animate-pulse">💣</span>
+          <span className="group-hover:animate-pulse">☠️</span>
           DESTROY NOW
         </button>
       </header>
@@ -150,7 +150,7 @@ const Page = () => {
         {messages?.messages.length === 0 && (
           <div className="flex items-center justify-center h-full">
             <p className="text-zinc-600 text-sm font-mono">
-              No messages yet, start the conversation.
+              No messages yet, Let's talk.
             </p>
           </div>
         )}
