@@ -3,6 +3,7 @@ import { JetBrains_Mono } from "next/font/google"
 import "./globals.css"
 import { Providers } from "@/components/providers"
 import { Analytics } from "@vercel/analytics/next"
+import RegisterSW from "@/components/register-sw"
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -23,10 +24,17 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/icons/apple-touch-icon.svg" />
+        <meta name="theme-color" content="#0f172a" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
       </head>
       <body className={`${jetbrainsMono.variable} antialiased`}>
         <Providers>{children}</Providers>
         <Analytics />
+        {/* Register PWA service worker for offline / installable behavior */}
+        {/* Client-side: RegisterSW uses a client-side effect to register /sw.js */}
+        <RegisterSW />
       </body>
     </html>
   )
